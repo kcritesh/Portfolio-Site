@@ -678,7 +678,11 @@ body[data-theme="dark"] .dark-mode-switch .form-check-input:focus {
 }
 
 body[data-theme="dark"] .header {
-  background: #1e2124;
+  
+  /* background: #1e2124; */
+  background-image: url(../images/herobg.webp);
+  background-size: cover;
+  background-position: center;
   color: rgba(255, 255, 255, 0.9);
   border-top-color: #1e2124;
 }

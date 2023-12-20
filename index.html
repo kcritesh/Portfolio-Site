@@ -23,13 +23,16 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
+    <script>
+        // setting dark mode as default
+        localStorage.setItem("darkSwitch", "dark");
+    </script>
 </head>
 
 <body>
     <!-- ******HEADER****** -->
     <header class="header">
-        <div class="container">
+        <div class="container hero-container">
             <div class="row align-items-center">
                 <div class="col">
                     <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png"
@@ -52,7 +55,7 @@
                 <div class="col-12 col-md-auto">
                     <div class="dark-mode-switch d-flex">
                         <div class="form-check form-switch mx-auto mx-md-0">
-                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" checked/>
                             <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
                         </div>
                     </div>
@@ -102,7 +105,7 @@
 
                 <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Personal Projects</h2>
+                        <h2 class="heading">Projects</h2>
                         <div class="content">
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://openai.riteshkc.com.np/"
@@ -112,9 +115,9 @@
                                         alt="openai-logo" />
                                 </a>
                                 <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/kcritesh/Discord-UI"
+                                    <h3 class="title"><a href="https://openai.riteshkc.com.np/"
                                             target="_blank">Image Generation Tool using OpenAI's API</a></h3>
-                                    <p class="mb-2">FullStack Image Generation App where we can generate images by text prompt & also share with the community</p>
+                                    <p class="mb-2">FullStack Image Generation App where we can generate images by text prompt & share with the community</p>
                                     <p><a class="more-link" href="https://github.com/kcritesh/openai-image-gen"
                                             target="_blank"><i class="fab fa-github"></i>Frontend</a>
                                     </p>
@@ -127,51 +130,6 @@
                                 </div>
                                 <!--//desc-->
                             </div>
-                              
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/kcritesh/Redux-Store"
-                                    target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
-                                        alt="redux-logo" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/kcritesh/Redux-Store"
-                                            target="_blank">Redux Store Bank</a></h3>
-                                    <p class="mb-2">A Simple project implementing the redux state Management library
-                                        where I have stored the balance in redux store and handled them from several
-                                        components by dispatching actions.</p>
-                                    <p><a class="more-link" href="https://github.com/kcritesh/Redux-Store"
-                                            target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://qrlekh.com/" target="_blank">
-                                    <img class="img-fluid project-image rounded shadow-sm"
-                                        src="https://www.qrcode-monkey.com/img/default-preview-qr.svg" alt="qr-logo" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://qrlekh.com/" target="_blank">QR Lekh</a></h3>
-                                    <p class="mb-2">QRlekh aimed to provide data of historical places to guide tourists
-                                        just by scanning the QRcode. I implemented the frontend on ReactJS. I worked on
-                                        this project at my previous internship @<a href="lancemeup.com">Lanceme Up</a>
-                                        <br> <i> PS - Not Deployed Right
-                                            Now</i>
-                                    </p>
-                                    <p><a class="more-link" href="https://qrlekh.com/" target="_blank"><i
-                                                class="fas fa-external-link-alt"></i>Find out more</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-
-                          
-
-
 
                         </div>
                         <!--//content-->
@@ -230,22 +188,15 @@
             </div>
             <!--//primary-->
             <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="riteshkc" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://np.linkedin.com/in/riteshkc?trk=profile-badge"></a></div>
-                        <!--//content-->
-                    </div>
-                    <!--//section-inner-->
-                </aside>
                  <aside class="info aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i><span
-                                        class="sr-only">Location:</span>Bhaktapur, Nepal</li>
+                                        class="sr-only">Location:</span>Kathmandu, Nepal</li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="#">mail@riteshkc.com.np</a></li>
+                                        href="#">riteshkcdev@gmail.com</a></li>
                                 <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
                                         href="#">https://www.riteshkc.com.np</a></li>
                             </ul>
@@ -258,55 +209,44 @@
 
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
+                        <h2 class="heading">Primary Skills</h2>
                         <div class="content">
 
 
                             <div class="skillset">
 
-
-                                <div class="item">
-                                    <h3 class="level-title">ReactJS <span class="level-label" data-bs-toggle="tooltip"
+                                <div class="item">   
+                                    <h3 class="level-title">NextJS, ReactJS <span class="level-label" data-bs-toggle="tooltip"
                                             data-bs-placement="left" title="I use this to deploy my web applications"><i
-                                                class="fas fa-info-circle"></i>Begineer</span></h3>
+                                                class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                                
                                     <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"></div>
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"> <i>2+ Yrs Exp</i> </div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
+                               
                                 <div class="item">
                                     <h3 class="level-title">NodeJS <span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left" title="I use this to deploy my web applications"><i
-                                                class="fas fa-info-circle"></i>Begineer</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, &amp; JS<span class="level-label"
-                                            data-bs-toggle="tooltip" data-bs-placement="left"
-                                            title="I can create Responsible Site using HTML and CSS & JS."><i
-                                                class="fas fa-info-circle"></i>Intermediate</span></h3>
-                                    <div class="level-bar progress">
-                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
-                                    </div>
-                                    <!--//level-bar-->
-                                </div>
-                                <!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip"
-                                            data-bs-placement="left" title="Basic knowledge on Python"><i
-                                                class="fas fa-info-circle"></i>Begineer</span></h3>
-
+                                            data-bs-placement="left" title="Skillfull in creating backend with nodeJS but primarily a frontend dev"><i
+                                                class="fas fa-info-circle"></i>Skillfull</span></h3>
                                     <div class="level-bar progress">
                                         <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%"
-                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="70"></div>
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="60"> <i>1.5+ Yrs Exp</i></div>
+                                    </div>
+                                    <!--//level-bar-->
+                                </div>
+                                <!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">TypeScript<span class="level-label"
+                                            data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="I use TypeScript for type safety"><i
+                                                class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                    <div class="level-bar progress">
+                                        <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"><i>1.5+ Yrs Exp</i></div>
                                     </div>
                                     <!--//level-bar-->
                                 </div>
@@ -369,7 +309,6 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
             <small class="copyright">Developed by: <i class="fas fa-heart"></i> <a href="https://github.com/kcritesh"
                     target="_blank">Ritesh KC</a></small> <br>
 
