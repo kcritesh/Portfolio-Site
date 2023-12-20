@@ -685,6 +685,7 @@ body[data-theme="dark"] .header {
   background-position: center;
   color: rgba(255, 255, 255, 0.9);
   border-top-color: #1e2124;
+  background-attachment: fixed;
 }
 
 body[data-theme="dark"] .header .profile-content .name {
