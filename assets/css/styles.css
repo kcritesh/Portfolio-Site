@@ -679,8 +679,8 @@ body[data-theme="dark"] .dark-mode-switch .form-check-input:focus {
 
 body[data-theme="dark"] .header {
   
-  /* background: #1e2124; */
-  background-image: url(../images/herobg.webp);
+  background: #1e2124;
+  background-image: url("https://wsrv.nl/?url=www.riteshkc.com.np/assets/images/herobg.webp&blur=20&mod=0.5");
   background-size: cover;
   background-position: center;
   color: rgba(255, 255, 255, 0.9);
